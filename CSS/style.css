@@ -1,6 +1,4 @@
 h1 {
-	margin: 30px 0px 30px 0px;
-	font-size: 35px;
 	text-align: center;
 	font-weight: 600;
 }
@@ -8,7 +6,13 @@ h1 {
 .blocoPrincipal {
 	text-align: center;
 }
-	
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 input {
 	text-align: center;
 	font-size: 25px;
