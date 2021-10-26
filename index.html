@@ -1,22 +1,19 @@
 <!DOCtype html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="utf-8">
-	<title>Fluxo | Caixa</title>
-	<link rel="stylesheet" href="CSS/reset.css">
+	<title>Sistema | Caixa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-
 	<header>
 		<h1>Caixa</h1>
 	</header>
-
 	<main class="blocoPrincipal">
+		<p class="comprovantePagamento" data-comprovante-pagamento></p>
 		<div class="blocoInputs">
 			<input  data-painel-valor><br>
-
 			<ul>
 				<li>
 				   	<button onclick="compra.valorRecebido();">
@@ -28,23 +25,28 @@
 				        <p>Valor da Compra</p>
 			        </button>
 				</li>
+			</ul>
+			<ul>
 				<li>
-					<button onclick="compra.comprovantePagamento();">
-						<p>Gerar nota</p>
+					<button data-gerar-nota onclick="compra.comprovantePagamento();">
+						<p >Gerar nota</p>
 					</button>
 				</li>
 				<li>
-					<button onclick="window.location.reload();">
+					<button onclick="compra.resetaComprovante();">
 						<p>Novo Pedido</p>
 					</button>
 				</li>
+				<li>
+					<button onclick="compra.movimentoDiario();">
+						<p>Movimento Diario</p>
+					</button>
+				</li>
 			</ul>
-
-		<p class="comprovantePagamento" data-comprovante-pagamento>
-			
-		</p>
-
+		</div>
+		<p class="movimentoDiario" data-movimento-diario></p>
 	</main>
+	</div>
 </body>
-	<script src="JavaScript/index.js"></script>
+	<script src="../JavaScript/index.js"></script>
 </html>
