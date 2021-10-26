@@ -1,33 +1,41 @@
 h1 {
+	font-family: sans-serif ;
 	text-align: center;
 	font-weight: 600;
+	font-size: 40px;
+	letter-spacing: 12px;
 }
 
-.blocoPrincipal {
+main {
 	text-align: center;
 }
 
 ul {
+	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	justify-content: center;
 }
 
 input {
 	text-align: center;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 600;
-	background: gray;
+	width: 30%;
+	height: 120px;
+	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
 button {
 	width: 150px;
 	font-size: 25px;
 	font-weight: 600;
-	margin: 10px;
+	margin: 12px;
 	padding: 10px;
 	border-radius: 10px;
-	background: orange;
+	background: #5cb85c;
 	color: white;
 	text-align: center;
 }
@@ -36,12 +44,53 @@ button:hover {
 	transform: scale(1.1);
 	background: white;
 	color: black;
-	border-color: red;
+	border-color: #5cb85c;
+	box-shadow: 10px 10px 10px 10px black;
+	cursor: pointer;
 }
 
 button:focus {
 	transform: scale(1.1);
 	background: white;
-	color: black;
-	border-color: red;
+	color: #5CB85C;;
+	border-color: #5CB85C;
+	box-shadow: 10px 10px 10px 10px black;
+}
+
+.blocoPrincipal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.resultados {
+	display: flex;
+	text-align: end;
+}
+
+.movimentoDiario, .comprovantePagamento {
+	box-sizing: border-box;
+	width: 25%;
+}
+
+@media(max-width: 780px) {
+
+	.blocoPrincipal {
+		display: initial;
+	}
+
+	input {
+		width: 39%;
+	}
+
+	ul {
+		display: initial;
+	}
+
+	.comprovantePagamento {
+		width: initial;
+	}
+	.movimentoDiario {
+		width: initial;
+		margin-top: 40px;
+	}
 }
