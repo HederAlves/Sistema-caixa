@@ -96,18 +96,11 @@ button:focus {
 
 	button:hover {
 		transform: scale(1.1);
-		background: white;
-		color: black;
-		border-color: #5cb85c;
 		box-shadow: 2px 2px 2px 2px black;
-		cursor: pointer;
 	}
 
 	button:focus {
-		transform: scale(1.1);
-		background: white;
-		color: #5CB85C;;
-		border-color: #5CB85C;
+		transform scale(1.1);
 		box-shadow: 2px 2px 2px 2px black;
 	}
 }
